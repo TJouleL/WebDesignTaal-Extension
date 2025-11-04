@@ -1,5 +1,5 @@
 # WebDesignTaal Extentie
-![](https://img.shields.io/github/stars/TJouleL/WebDesignTaal-Extention) ![](https://img.shields.io/github/forks/TJouleL/WebDesignTaal-Extention) ![](https://img.shields.io/github/tag/TJouleL/WebDesignTaal-Extention) ![](https://img.shields.io/github/release/TJouleL/WebDesignTaal-Extention) ![](https://img.shields.io/github/issues/TJouleL/WebDesignTaal-Extention)
+![](https://img.shields.io/github/stars/TJouleL/WebDesignTaal-Extension) ![](https://img.shields.io/github/forks/TJouleL/WebDesignTaal-Extension) ![](https://img.shields.io/github/tag/TJouleL/WebDesignTaal-Extension) ![](https://img.shields.io/github/release/TJouleL/WebDesignTaal-Extension) ![](https://img.shields.io/github/issues/TJouleL/WebDesignTaal-Extension)
 
 Deze Visual Studio Code extensie biedt syntax highlighting voor WebDesignTaal (`.wdt`) bestanden, waardoor je code gemakkelijker te lezen en te schrijven is. Voor meer informatie over WebDesignTaal, bezoek de officiële GitHub repository: [TJouleL/WebDesignTaal](https://github.com/TJouleL/WebDesignTaal). 
 
@@ -9,7 +9,7 @@ De versie van de extentie is gebaseerd op de versie's van WebDesignTaal. De Exte
 
 ## Installatie
 
-1.  Ga naar de [Releases pagina](https://github.com/TJouleL/WebDesignTaal-Extention/releases) op GitHub.
+1.  Ga naar de [Releases pagina](https://github.com/TJouleL/WebDesignTaal-Extension/releases) op GitHub.
 2.  Download het meest recente `.vsix` bestand van de nieuwste release.
 3.  Open Visual Studio Code.
 4.  Navigeer naar de **Extensions** weergave (Ctrl+Shift+X).
