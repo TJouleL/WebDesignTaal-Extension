@@ -1,0 +1,40 @@
+{
+    "name": "webdesigntaal-syntax",
+    "displayName": "WebDesignTaal Syntax",
+    "description": "Syntax highlighting voor WebDesignTaal (.wdt)",
+    "version": "0.1.2",
+    "publisher": "TJouleL",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/TJouleL/WebDesignTaal-Extention.git"
+    },
+    "engines": {
+        "vscode": "^1.60.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "webdesigntaal",
+                "aliases": [
+                    "WebDesignTaal",
+                    "webdesigntaal",
+                    "wdt"
+                ],
+                "extensions": [
+                    ".wdt"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "webdesigntaal",
+                "scopeName": "source.webdesigntaal",
+                "path": "./syntaxes/webdesigntaal.tmLanguage.json"
+            }
+        ]
+    }
+}

@@ -1,0 +1,55 @@
+{
+    "scopeName": "source.webdesigntaal",
+    "name": "WebDesignTaal",
+    "patterns": [
+        {
+            "name": "comment.line.number-sign.webdesigntaal",
+            "match": "#.*$"
+        },
+        {
+            "begin": "^\\s*(\\b(?:document|head|body|kop[1-6]|tekst|opsomming_lijst|getal_lijst|lijst_item|afbeelding|link|gedeelte|artikel|audio|video|quote|lijn|schuingedrukt|dikgedrukt|onderlijndrukt|metadata|tabel|tabelrij|tabelcel|stijl|code)\\b)",
+            "beginCaptures": {
+                "1": { "name": "keyword.control.tag.webdesigntaal" }
+            },
+            "end": "$",
+            "patterns": [
+                {
+                    "name": "entity.other.attribute-name.webdesigntaal",
+                    "match": "\\b(id|class|klasse|href|src|alt|title|name|value|type|placeholder|checked|disabled|readonly|action|method|for|rel|target|width|height|cols|rows|maxlength|min|max|step|selected|autocomplete|download|role|lang|tabindex|aria-label|style|bron|breedte|hoogte|rijen|kolommen|taal|adres|alttekst|karakterset|charset|citeer|verborgen|content|kleur|achtergrondkleur|achtergrond|lettertype|lettergrootte|letterstijl|lettergewicht|tekstuitlijning|tekstdecoratie|teksttransformatie|regelhoogte|woordafstand|letterafstand|marge|margeboven|margeonder|margelinks|margerechts|opvulling|opvullingboven|opvullingonder|opvullinglinks|opvullingrechts|rand|randkleur|randstijl|randdikte|afronding|positie|boven|onder|links|rechts|zweven|weergave|zichtbaarheid|zindex|schaduw|tektschaduw|doorzichtigheid|cursor|achtergrondafbeelding|achtergrondpositie|achtergrondherhaling|achtergronddekking|animatie|animatienaam|animatieduur|overgang|color|background-color|background|font-family|font-size|font-style|font-weight|text-align|text-decoration|text-transform|line-height|word-spacing|letter-spacing|margin-top|margin-bottom|margin-left|margin-right|padding-top|padding-bottom|padding-left|padding-right|border-color|border-style|border-width|border-radius|position|top|bottom|left|right|float|display|visibility|z-index|box-shadow|text-shadow|opacity|background-image|background-position|background-repeat|background-size|animation-name|animation-duration|transition)\\b(?==)"
+                },
+                {
+                    "name": "punctuation.separator.key-value.webdesigntaal",
+                    "match": "="
+                },
+                {
+                    "name": "string.quoted.double.webdesigntaal",
+                    "begin": "\"",
+                    "end": "\""
+                },
+                {
+                    "name": "string.quoted.single.webdesigntaal",
+                    "begin": "'",
+                    "end": "'"
+                },
+                {
+                    "name": "string.unquoted.attribute-value.webdesigntaal",
+                    "match": "\\b(rood|blauw|green|groen|geel|zwart|wit|grijs|lichtgrijs|donkergrijs|lichtblauw|donkerblauw|lichtgroen|donkergroen|lichtrood|donkerrood|lichtgeel|donkergeel|paars|oranje|roze|bruin|transparant|links|rechts|midden|gecentreerd|boven|onder|blok|inline|flex|geen|vet|normaal|cursief|absoluut|relatief|vast|verborgen|zichtbaar|stippel|gestreept|doorgetrokken|red|blue|yellow|black|white|gray|lightgray|darkgray|lightblue|darkblue|lightgreen|darkgreen|lightred|darkred|lightyellow|darkyellow|purple|pink|brown|transparent|center|top|bottom|none|bold|italic|dotted|dashed|solid)\\b"
+                },
+                {
+                    "name": "constant.numeric.webdesigntaal",
+                    "match": "\\b\\d+(?:\\.\\d+)?(?:px|%|em|rem|vw|vh)?\\b"
+                },
+                {
+                    "name": "string.unquoted.attribute-value.webdesigntaal",
+                    "match": "(?<==)[^\\s;\"'']+"
+                },
+                {
+                    "begin": ";",
+                    "beginCaptures": { "0": { "name": "meta.separator.webdesigntaal" } },
+                    "end": "$",
+                    "name": "string.unquoted.content.webdesigntaal"
+                }
+            ]
+        }
+    ]
+}
