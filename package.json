@@ -2,7 +2,7 @@
     "name": "webdesigntaal-syntax",
     "displayName": "WebDesignTaal Syntax",
     "description": "Syntax highlighting voor WebDesignTaal (.wdt)",
-    "version": "0.1.5",
+    "version": "0.1.6",
     "publisher": "TJouleL",
     "repository": {
         "type": "git",
